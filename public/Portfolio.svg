@@ -1,0 +1,28 @@
+<svg width="240" height="100" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="motionBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e0ff"/>
+      <stop offset="50%" stop-color="#0077b6"/>
+      <stop offset="100%" stop-color="#001d3d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Dynamic shapes -->
+  <polygon points="20,50 40,20 60,50 40,80" fill="url(#motionBlue)" opacity="0.9"/>
+  <circle cx="40" cy="50" r="25" stroke="url(#motionBlue)" stroke-width="3" fill="none"/>
+  
+  <!-- BMR text -->
+  <text x="85" y="62" font-family="Montserrat, sans-serif" font-size="44" font-weight="800"
+        fill="url(#motionBlue)" letter-spacing="3" filter="url(#glow)">
+    BMR
+  </text>
+  
+  <!-- Accent underline -->
+  <rect x="85" y="70" width="105" height="4" rx="2" fill="url(#motionBlue)" opacity="0.8"/>
+</svg>
