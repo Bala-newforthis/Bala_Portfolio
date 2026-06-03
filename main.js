@@ -1,4 +1,4 @@
-/* ================= PROGRESS BAR ================= */
+
 const progressBar = document.createElement('div');
 progressBar.id = 'progress-bar';
 document.body.prepend(progressBar);
@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* ================= CUSTOM CURSOR ================= */
+
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');
 
@@ -39,7 +39,7 @@ document.addEventListener('mousemove', (e) => {
 })();
 
 
-/* ================= CURSOR HOVER EFFECT ================= */
+
 document.querySelectorAll('a, button, .glass-card, .tag, .skill-card, .project-card')
   .forEach(el => {
     el.addEventListener('mouseenter', () => {
@@ -54,7 +54,7 @@ document.querySelectorAll('a, button, .glass-card, .tag, .skill-card, .project-c
   });
 
 
-/* ================= NAVBAR SCROLL ================= */
+
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* ================= ACTIVE NAV LINK ================= */
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -139,7 +139,7 @@ const revealObserver = new IntersectionObserver(entries => {
 revealElements.forEach(el => revealObserver.observe(el));
 
 
-/* ================= SKILL BAR ================= */
+
 document.querySelectorAll('.level-fill').forEach(bar => {
   new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
@@ -149,7 +149,7 @@ document.querySelectorAll('.level-fill').forEach(bar => {
 });
 
 
-/* ================= SMOOTH SCROLL ================= */
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
     const target = document.querySelector(anchor.getAttribute('href'));
