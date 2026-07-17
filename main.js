@@ -1,4 +1,3 @@
-
 const progressBar = document.createElement('div');
 progressBar.id = 'progress-bar';
 document.body.prepend(progressBar);
@@ -86,15 +85,24 @@ const mobileNav = document.getElementById('mobile-nav');
 
 hamburger?.addEventListener('click', () => {
   mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open');
+});
+
+// Close mobile menu when a link is tapped
+document.querySelectorAll('.mob-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav?.classList.remove('open');
+    hamburger?.classList.remove('open');
+  });
 });
 
 
 /* ================= TYPEWRITER ================= */
 const roles = [
-  'Full Stack Developer',
+  'Full Stack MERN Developer',
   'Frontend Developer',
-  'Backend Developer',
-  'MERN Stack Developer'
+  'Backend API Developer',
+  'AI Integeration Developer'
 ];
 
 let roleIndex = 0, charIndex = 0, isDeleting = false;
@@ -158,6 +166,95 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
+
+
+/* ================= ANIMATED STAT COUNTERS ================= */
+const statNumbers = document.querySelectorAll('.stat-number');
+
+function animateCount(el) {
+  const target = parseFloat(el.dataset.count);
+  const decimals = parseInt(el.dataset.decimal || '0', 10);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1400;
+  const start = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+    const value = target * eased;
+    el.textContent = value.toFixed(decimals) + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = target.toFixed(decimals) + suffix;
+  }
+  requestAnimationFrame(tick);
+}
+
+const statObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCount(entry.target);
+      statObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.6 });
+
+statNumbers.forEach(el => statObserver.observe(el));
+
+
+/* ================= EXPERIENCE TIMELINE FILL ================= */
+const timeline = document.querySelector('.timeline');
+const timelineFill = document.getElementById('timeline-fill');
+
+function updateTimelineFill() {
+  if (!timeline || !timelineFill) return;
+  const rect = timeline.getBoundingClientRect();
+  const viewportH = window.innerHeight;
+
+  // How far the viewport has scrolled through the timeline, 0 to 1
+  const start = viewportH * 0.85;
+  const total = rect.height + viewportH * 0.3;
+  const scrolled = start - rect.top;
+  const percent = Math.max(0, Math.min(1, scrolled / total));
+
+  timelineFill.style.height = (percent * 100) + '%';
+}
+
+window.addEventListener('scroll', updateTimelineFill);
+window.addEventListener('resize', updateTimelineFill);
+updateTimelineFill();
+
+
+/* ================= RESUME PREVIEW MODAL ================= */
+const resumeModal = document.getElementById('resume-modal');
+const resumeModalBackdrop = document.getElementById('resume-modal-backdrop');
+const resumeModalClose = document.getElementById('resume-modal-close');
+const resumeModalFrame = document.getElementById('resume-modal-frame');
+const resumePreviewBtn = document.getElementById('resume-preview-btn');
+const RESUME_PATH = './assets/Balaji _1 Resume.pdf';
+
+function openResumeModal() {
+  if (!resumeModal) return;
+  if (resumeModalFrame && !resumeModalFrame.src) {
+    resumeModalFrame.src = RESUME_PATH;
+  }
+  resumeModal.classList.add('open');
+  resumeModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeResumeModal() {
+  if (!resumeModal) return;
+  resumeModal.classList.remove('open');
+  resumeModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+resumePreviewBtn?.addEventListener('click', openResumeModal);
+resumeModalClose?.addEventListener('click', closeResumeModal);
+resumeModalBackdrop?.addEventListener('click', closeResumeModal);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && resumeModal?.classList.contains('open')) closeResumeModal();
 });
 
 

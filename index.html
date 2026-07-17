@@ -3,14 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balaji Murugan Reddy — Full Stack Developer</title>
+    <title>Balaji Murugan Reddy — Full Stack MERN Developer</title>
+
+    <!-- ===== SEO ===== -->
+    <meta
+      name="description"
+      content="Balaji Murugan Reddy is a Full Stack MERN Developer based in Mumbai, India, specializing in React.js, Node.js, Express.js, MongoDB and AI-powered web applications."
+    />
+    <meta
+      name="keywords"
+      content="Balaji Murugan Reddy, Full Stack Developer, MERN Developer, React Developer, Node.js Developer, Mumbai Developer Portfolio"
+    />
+    <meta name="author" content="Balaji Murugan Reddy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#060612" />
+    <link rel="canonical" href="https://balajimuruganreddy.dev/" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='sans-serif'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- ===== Open Graph / Facebook ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://balajimuruganreddy.dev/" />
+    <meta
+      property="og:title"
+      content="Balaji Murugan Reddy — Full Stack MERN Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack MERN Developer specializing in React.js, Node.js, Express.js, MongoDB and AI-powered applications. Explore my experience, skills & projects."
+    />
+    <meta property="og:image" content="./assets/og-cover.jpg" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ===== Twitter ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://balajimuruganreddy.dev/" />
+    <meta
+      name="twitter:title"
+      content="Balaji Murugan Reddy — Full Stack MERN Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full Stack MERN Developer specializing in React.js, Node.js, Express.js, MongoDB and AI-powered applications."
+    />
+    <meta name="twitter:image" content="./assets/og-cover.jpg" />
+
+    <!-- ===== Performance: font loading ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="style" href="./index.css" />
     <link rel="stylesheet" href="./index.css" />
+
+    <!-- ===== Structured data for SEO ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Balaji Murugan Reddy",
+        "jobTitle": "Full Stack MERN Developer",
+        <!-- "url": "https://balajimuruganreddy.dev/", -->
+        "email": "mailto:balajireddy.m6@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/Bala-newforthis",
+          "https://www.linkedin.com/in/balaji-reddy-abb699129"
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Animated Background Orbs -->
@@ -37,12 +107,13 @@
         <ul class="nav-links">
           <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experiences</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certificates</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <!-- <a href="mailto:balajireddy.m6@gmail.com" class="nav-cta">Hire Me</a> -->
+        <a href="mailto:balajireddy.m6@gmail.com" class="nav-cta">Hire Me</a>
         <button class="hamburger" id="hamburger">
           <span></span><span></span><span></span>
         </button>
@@ -54,11 +125,54 @@
       <ul>
         <li><a href="#home" class="mob-link">Home</a></li>
         <li><a href="#about" class="mob-link">About</a></li>
+        <li><a href="#experience" class="mob-link">Experience</a></li>
         <li><a href="#skills" class="mob-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experiences</a></li>
         <li><a href="#projects" class="mob-link">Projects</a></li>
         <li><a href="#contact" class="mob-link">Contact</a></li>
       </ul>
+      <div class="mobile-nav-socials">
+        <a
+          href="https://github.com/Bala-newforthis"
+          target="_blank"
+          class="social-icon"
+          title="GitHub"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/balaji-reddy-abb699129"
+          target="_blank"
+          class="social-icon"
+          title="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            />
+          </svg>
+        </a>
+        <a
+          href="mailto:balajireddy.m6@gmail.com"
+          class="social-icon"
+          title="Email"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
     </div>
 
     <!-- ========== HERO ========== -->
@@ -80,9 +194,11 @@
             <span class="cursor-blink">|</span>
           </div>
           <p class="hero-bio">
-            Motivated Full Stack Developer (fresher) with skills in HTML, CSS,
-            JavaScript, React, Node.js, and MongoDB. Eager to apply technical
-            skills and grow in a professional development environment.
+            Full Stack MERN Developer currently working at Save As Web,
+            Specializing in React.js, Node.js , Express.js, MongoDB, and
+            AI-powered applications. Passionate about building scalable web
+            platforms, intelligent automation and delivering exceptional user
+            experiences.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn-primary">
@@ -197,13 +313,13 @@
               </div>
               <div class="stat-divider"></div>
               <div class="stat-item">
-                <span class="stat-val">8+</span>
-                <span class="stat-lbl">Skills</span>
+                <span class="stat-val">10+</span>
+                <span class="stat-lbl">Technologies</span>
               </div>
               <div class="stat-divider"></div>
               <div class="stat-item">
-                <span class="stat-val">🔥</span>
-                <span class="stat-lbl">Fresher</span>
+                <span class="stat-val">Current</span>
+                <span class="stat-lbl">Save as Web</span>
               </div>
             </div>
           </div>
@@ -243,12 +359,18 @@
               <span class="gradient-text">scalable</span> web apps
             </h3>
             <p class="about-text">
-              I'm <strong>Balaji Murugan Reddy</strong>, a motivated Full Stack
-              Developer from Mumbai, India. As a fresher, I bring fresh
-              perspectives and a hunger to solve real-world problems through
-              clean, efficient code. I specialize in the
-              <strong>MERN Stack</strong> and love crafting user experiences
-              that are both beautiful performance.
+              I'm <strong>Balaji Murugan Reddy</strong>, a motivated
+              <strong>Full Stack MERN Developer</strong> from Mumbai,
+              India.Currently working at Save As Web. I build scalable web
+              applications using React.js, Node.js, Express.js, and MongoDB. My
+              work includes REST API development, AI chatbot integration,
+              authentication systems, and responsive frontend
+              interfaces.Previously, I worked at Accenture,where I gained
+              experience in quality operations, analytical thinking, and
+              collaborative software processes. I enjoy solving real-world
+              problems through technology and continuously learning modern web
+              development practices and love crafting user experiences that are
+              both beautiful performance.
             </p>
             <p class="about-text">
               My journey started with curiosity about how the web works — and
@@ -275,7 +397,7 @@
                 <span class="info-icon">🎓</span>
                 <div>
                   <span class="info-label">Role</span>
-                  <span class="info-val">Full Stack Developer</span>
+                  <span class="info-val">Full Stack MERN Developer</span>
                 </div>
               </div>
               <div class="info-item glass-card">
@@ -287,26 +409,204 @@
               </div>
             </div>
 
-            <a
-              href="./assets/Balaji _1 Resume.pdf"
-              target="_blank"
-              download
-              class="btn-primary"
-            >
-              <span>Download CV</span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
+            <div class="about-cta-row">
+              <button type="button" class="btn-primary" id="resume-preview-btn">
+                <span>Preview Resume</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+              <a
+                href="./assets/Balaji _1 Resume.pdf"
+                target="_blank"
+                download
+                class="btn-glass"
               >
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-            </a>
+                <span>Download CV</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS BAND ========== -->
+    <section class="stats-band">
+      <div class="container stats-band-inner">
+        <div class="stat-block reveal">
+          <span
+            class="stat-number"
+            data-count="1"
+            data-suffix="+"
+            data-decimal="1"
+          >
+            1
+          </span>
+          <span class="stat-caption"> Years Building</span>
+        </div>
+        <div class="stat-block reveal" data-delay="100">
+          <span class="stat-number" data-count="3"> 3+ </span>
+          <span class="stat-caption">Projects Shipped</span>
+        </div>
+        <div class="stat-block reveal" data-delay="200">
+          <span class="stat-number" data-count="10" data-suffix="+">10+</span>
+          <span class="stat-caption">Technologies</span>
+        </div>
+        <div class="stat-block reveal" data-delay="300">
+          <span class="stat-number" data-count="1">1</span>
+          <span class="stat-caption">Companies</span>
+        </div>
+      </div>
+    </section>
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Where I've Worked</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Experience</span>
+          </h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line">
+            <div class="timeline-line-fill" id="timeline-fill"></div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-head">
+                <div
+                  class="timeline-icon"
+                  style="background: linear-gradient(135deg, #6bcb77, #4d96ff)"
+                >
+                  🟢
+                </div>
+                <div>
+                  <h3>Full Stack MERN Developer</h3>
+                  <p class="timeline-company">Save As Web</p>
+                </div>
+                <span class="timeline-badge">Current</span>
+              </div>
+              <span class="timeline-date">2026 — Present</span>
+              <p class="timeline-desc">
+                Building and shipping full-stack web platforms with React.js,
+                Node.js, Express.js and MongoDB. Own feature development end to
+                end — REST APIs, authentication systems, AI chatbot integrations
+                and responsive interfaces used in production.
+              </p>
+              <div class="timeline-tags">
+                <span>React</span><span>Node.js</span><span>Express</span
+                ><span>MongoDB</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="150">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-head">
+                <div
+                  class="timeline-icon"
+                  style="background: linear-gradient(135deg, #a855f7, #4d96ff)"
+                >
+                  🔷
+                </div>
+                <div>
+                  <h3>Trust and Safety Associate</h3>
+                  <p class="timeline-company">Accenture</p>
+                </div>
+              </div>
+              <span class="timeline-date">2022 — 2025</span>
+              <p class="timeline-desc">
+                Worked across quality operations and analytical processes,
+                sharpening problem-solving and collaborative software practices
+                — the foundation that later shaped my transition into full-stack
+                development.
+              </p>
+              <div class="timeline-tags">
+                <span>Quality </span><span>Analytical Thinking</span
+                ><span>Process Improvement</span><span>Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-head">
+                <div
+                  class="timeline-icon"
+                  style="background: linear-gradient(135deg, #ffd93d, #ff6b6b)"
+                >
+                  🎯
+                </div>
+                <div>
+                  <h3>Research & Business Development</h3>
+                  <p class="timeline-company">Learning</p>
+                </div>
+              </div>
+              <span class="timeline-date">2016 — 2020</span>
+              <p class="timeline-desc">
+                I have worked two companies as the Research Executive in the
+                companies i want to search the data where the other collegaue
+                can call and make the lead so the the companies offering the
+                services to the companies who where needed .
+              </p>
+              <div class="timeline-tags">
+                <span>Research</span><span>Analytic</span
+                ><span>Observation</span><span>Email Fundamentals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CURRENTLY WORKING ON ========== -->
+    <section class="section current-section">
+      <div class="container">
+        <div class="current-card glass-card reveal">
+          <div class="current-live">
+            <span class="live-dot"></span>
+            Currently Working On
+          </div>
+          <h3 class="current-title">
+            Polishing an
+            <span class="gradient-text">Url Shortner</span>
+            and exploring advanced backend architecture
+          </h3>
+          <p class="current-desc">
+            Right now I'm deepening my skills in scalable Node.js architecture,
+            refining LLM-driven features for ShortIQ, and experimenting with
+            performance optimization across the MERN stack — while shipping
+            features in the different design for the companies.
+          </p>
+          <div class="current-tags">
+            <span>Node.js Architecture</span><span>LLM Integration</span
+            ><span>System Design</span><span>Performance Tuning</span>
           </div>
         </div>
       </div>
@@ -541,6 +841,61 @@
           <div class="title-bar"></div>
         </div>
 
+        <!-- Featured Project -->
+        <div class="featured-project glass-card reveal">
+          <div class="featured-badge">
+            <span class="featured-star">★</span> Featured Project
+          </div>
+          <div class="featured-grid">
+            <div class="featured-visual">
+              <div
+                class="featured-icon"
+                style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+              >
+                📊
+              </div>
+              <div class="featured-visual-glow"></div>
+            </div>
+            <div class="featured-content">
+              <span class="project-tag">Full Stack · URL Shortner </span>
+              <h3>ShortIQ</h3>
+              <p>
+                The application is built using the MERN stack (MongoDB,
+                Express.js, React.js, and Node.js) with JWT-based authentication
+                for secure user access. It includes features such as custom
+                aliases, QR code generation, URL expiration, click tracking, and
+                responsive design for both web and mobile devices. The backend
+                follows RESTful API architecture, while the frontend delivers a
+                modern, user-friendly experience.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span><span>Vite</span><span>SCSS</span
+                ><span>Node.js</span><span>Express.js</span><span>MongoDB</span
+                ><span>Mongoose Atlas</span><span>Gemini API</span
+                ><span>JWT Auth</span><span>Axios</span><span>Puppeteer</span>
+                <span>React-native</span>
+              </div>
+              <a
+                href="https://github.com/Bala-newforthis"
+                target="_blank"
+                class="btn-glass featured-link"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card glass-card reveal">
@@ -646,71 +1001,8 @@
             </div>
             <div class="project-footer">
               <div class="project-tech">
-                <span>React</span><span>Cursor</span><span>JavaScript</span
+                <span>HTML</span><span>Cursor</span><span>JavaScript</span
                 ><span>CSS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card glass-card reveal" data-delay="300">
-            <div
-              class="project-glow"
-              style="
-                background: radial-gradient(
-                  circle,
-                  rgba(245, 158, 11, 0.15),
-                  transparent 70%
-                );
-              "
-            ></div>
-            <div class="project-header">
-              <div
-                class="project-icon"
-                style="background: linear-gradient(135deg, #f59e0b, #d97706)"
-              >
-                📊
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Bala-newforthis"
-                  target="_blank"
-                  class="proj-link"
-                  title="GitHub"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    width="18"
-                    height="18"
-                  >
-                    <path
-                      d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="project-body">
-              <span class="project-tag"
-                >Full Stack · GenAI_Interview Analyzer</span
-              >
-              <h3>GenAI_Interview</h3>
-              <p>
-                Developed an AI-powered Interview Analyzer that evaluates
-                resumes against job descriptions, generates personalized
-                interview questions, analyzes candidate responses using LLMs,
-                provides skill-gap analysis, ATS scoring, and detailed interview
-                reports with PDF export functionality.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span>React.js</span><span>Vite</span><span>SCSS</span
-                ><span>Node.js</span><span>Express.js</span><span>MongoDB</span
-                ><span>Mongoose Atlas</span><span>GeminiAPI</span
-                ><span>JWT Authentication</span><span>Axios</span
-                ><span>Puppeteer</span>
               </div>
             </div>
           </div>
@@ -831,9 +1123,9 @@
               <div class="form-group">
                 <label>Email Address</label>
                 <input
-                  type="email"
-                  name="user_email"
-                  placeholder="your@email.com"
+                  type="gmail"
+                  name="user_gmail"
+                  placeholder="your@gmail.com"
                   required
                 />
               </div>
@@ -879,47 +1171,163 @@
 
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-logo">
-          <span class="logo-bracket">&lt;</span>BMR<span class="logo-bracket"
-            >/&gt;</span
-          >
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>BMR<span class="logo-bracket"
+              >/&gt;</span
+            >
+          </div>
+          <p class="footer-tagline">
+            Full Stack MERN Developer building scalable web platforms and
+            AI-powered applications from Mumbai, India.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://github.com/Bala-newforthis"
+              target="_blank"
+              class="social-icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/balaji-reddy-abb699129"
+              target="_blank"
+              class="social-icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a href="mailto:balajireddy.m6@gmail.com" class="social-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <p class="footer-text">
-          Built with ❤️ by
-          <span class="gradient-text">Balaji Murugan Reddy</span> · Mumbai,
-          India
-        </p>
-        <div class="footer-socials">
-          <a
-            href="https://github.com/Bala-newforthis"
-            target="_blank"
-            class="social-icon"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/balaji-reddy-abb699129"
-            target="_blank"
-            class="social-icon"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              />
-            </svg>
-          </a>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:balajireddy.m6@gmail.com"
+                >balajireddy.m6@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/balaji-reddy-abb699129"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Bala-newforthis" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li><span class="footer-static">Mumbai, India</span></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© 2025 Balaji Murugan Reddy. All rights reserved.</p>
+        <p class="footer-builtwith">Built with ❤️</p>
       </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <!-- ========== RESUME PREVIEW MODAL ========== -->
+    <div class="resume-modal" id="resume-modal" aria-hidden="true">
+      <div class="resume-modal-backdrop" id="resume-modal-backdrop"></div>
+      <div
+        class="resume-modal-panel glass-card"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Resume preview"
+      >
+        <div class="resume-modal-head">
+          <h3>Resume Preview</h3>
+          <div class="resume-modal-actions">
+            <a
+              href="./assets/Balaji _1 Resume.pdf"
+              target="_blank"
+              download
+              class="btn-glass resume-modal-download"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download</span>
+            </a>
+            <button
+              type="button"
+              class="resume-modal-close"
+              id="resume-modal-close"
+              aria-label="Close resume preview"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+        <div class="resume-modal-body">
+          <iframe
+            id="resume-modal-frame"
+            title="Balaji Murugan Reddy — Resume"
+            src=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" defer></script>
   </body>
 </html>
